@@ -14,5 +14,4 @@ it's based on using two API(s), callbacks.
 
 # User journy:
 
-The user may input a singer name in the searching bar,and press in submit button,what happens next is openeing the artist biography and his//her photo below the searching section.the user will have the choice to translate thit bio too, by pressing on the translate button the translated text will show in arabic language.
-If the user enter nothing- or spaces- and press the submit button it will show him/her an alert of that, likewise by pressing a non existing artist name in the list, the page will appear that it wasn't able to look for what the user is looking for.
+By writing the name of an artist, you'll be able to see his/her photo + Biography, Besides having the chance to translate the bio into arabic language. 
