@@ -3,7 +3,7 @@
 ## Team members:
 Banan Alhaj<br>
 Bayan Seder<br>
-Nejood Shawer<br>
+Nujood Shawer<br>
 Sahar Froukh<br>
 
 # What?
