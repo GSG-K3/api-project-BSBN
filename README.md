@@ -7,10 +7,12 @@ Nejood Shawer<br>
 Sahar Froukh<br>
 
 # What?
-This web page let the user to search for a song, then display it and its lyrics. also display translation for lyrics.
+This web page let the user to search for an Artist name, then display his photo and a breif biography for him/her. also display translation for this Bio.
 
 # How?
-It is biuld using API, recall, DOM ...
+it's based on using two API(s), callbacks.
 
 # User journy:
-The user will input song and singer names in input search, then press search, the web page will display a link for the song. If the user press translate button the web page will display lyrics translated.
+
+The user may input a singer name in the searching bar,and press in submit button,what happens next is openeing the artist biography and his//her photo below the searching section.the user will have the choice to translate thit bio too, by pressing on the translate button the translated text will show in arabic language.
+If the user enter nothing- or spaces- and press the submit button it will show him/her an alert of that, likewise by pressing a non existing artist name in the list, the page will appear that it wasn't able to look for what the user is looking for.
