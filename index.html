@@ -4,21 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>API Project BSBN</title>
     
 </head>
 <body>
-     <form>
-         <label>Artist Name</label>
-         <input type="text" id="searchArtist" >
-         <button type="submit" id="searchBtn">SEARCH</button>
+    <nav>
+    <header><h1 class="headerStyle">Celebrity World</h1></header> 
+    <label class="desc">You can read about your favorite artist here...</label><br>
+
+    </nav>
+     <form class="formStyle">
+         <label class="artistName">Artist Name</label>
+         <input type="text" class="searchInput" id="searchArtist" >
+         <button type="submit" id="searchBtn" class="button">SEARCH</button>
      </form>
-     <div> 
-         <img src="" id="artistImg">
-        <p id="artistInfo"></p>
-     </div>
-     <button type ="submit" id ="trnsBtn">Translate</button>
-    <p id="transLyrics"></p>
+     <div class="resultStyle"> 
+         <img src="" id="artistImg" class="artistImage">
+        <p id="artistInfo" class="infoStyle"></p>
+     
+   <div class="tranStyle"> <button type ="submit" id ="trnsBtn" class="button">Translate</button></div>  
+    <p id="transLyrics" class="infoStyle"> </p></div
+    >
 </body>
 <script src="logic.js"></script>
 </html>
