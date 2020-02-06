@@ -1,13 +1,14 @@
 body{
     margin: 0;
-    padding: 0;
+    padding: 20px;
     background-image: url(./pics/back.jpg) ;
     background-repeat: no-repeat;
     inline-size: block;
     background-size: 100%;
     width: 100%;
     height: 100%;
-    background-color: rgb(133, 157, 191);
+    background-color: rgb(90, 111, 141);
+    
     
 }
 
@@ -16,13 +17,10 @@ body{
     padding-right: 20px;
 }
 .artistImage{
-    width: 550px ;
+    width: 650px ;
     padding-top: 20px;
-    padding-bottom: 100px;
-    padding-left: 30vw;
-    /* border: 3px solid gray; */
-
-
+    padding-bottom: 70px;
+    padding-left: 20px;
 }
 .searchInput{
     height: 25px;
@@ -66,30 +64,135 @@ body{
 }
 .resultStyle{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    /* padding: 30px; */
-    width: 1000px;
+    padding-left: 200px;
+    width: 800px;
 }
 
 .infoStyle{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border: 2px solid gray; */
-    padding-left: 20vw;
+    padding-left: 20px;
     font-size: 20px;
+    width: 800px;
 
 }
 .tranStyle{ 
     display: flex;
     justify-content: center;
-    padding-left: 60vw ;
+    padding-left: 20px ;
    
 }
 
+@media only screen and (max-width: 790px){
+    body{
+      background-image: none;
+          }
+    .artistImage{
+            padding-bottom: 30px;
+            width: 400px;
+            height: 300px;
+        }
+        }
+@media only screen and (max-width: 420px){
+  body{
+    background-image: none;
+        }
+ .desc{
+ width: 350px;
+ font-size: 24px;
+ margin-left: 40px;
+    }
+ .headerStyle{
+ width: 90%;
+ padding-top: 50px;
+ font-size: 35px;
+ margin-left: 40px;
+    }
+ .artistImage{
+    padding-left: 10px;
+    padding-bottom: 30px;
+    width: 200px;
+    height: 200px;
+   }
+    
+ .searchInput{
+    margin-right: 20px;
+    }
 
+ .formStyle{
+   width: 300px;
+   margin-left: 40px;
+    }
+   
+ .artistName{
+    padding-right: 5px;
+    font-size: 16px;
+       }
+
+ .resultStyle{
+   width: 300px;
+   padding-left: 20px;
+   font-size: 14px;
+    }
+
+.infoStyle{
+    width: 300px;
+  
+}
+}
+
+@media only screen and (max-width: 340px){
+    body{
+    background-image: none;
+    }
+    .desc{
+        width: 280px;
+        font-size: 16px;
+           }
+       
+    .headerStyle{
+        width: 80%;
+    
+           }
+
+    .artistImage{
+           padding-left: 5px;
+           padding-bottom: 30px;
+           width: 200px;
+           height: 200px;
+       }
+
+    .searchInput{
+           margin-right: 3px;
+       }
+       
+    .formStyle{
+        font-size: 14px;
+        width: 270px;
+           }
+          
+    .artistName{
+        padding-right: 5px;
+        font-size: 16px;
+       }
+
+    .resultStyle{
+       width: 280px;
+       padding-left: 0px;
+       margin-left: 10px;
+       }
+       
+    .infoStyle{
+           width: 270px;
+           font-size: 14px;
+       }  
+
+}
 
 
 
