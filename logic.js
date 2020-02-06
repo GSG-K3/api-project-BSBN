@@ -6,11 +6,10 @@ let trnsBtn = document.getElementById("trnsBtn");
 let search=document.getElementById("searchBtn")
 
 let request = function (recall, url){
-var xhr = new XMLHttpRequest();
+let xhr = new XMLHttpRequest();
 xhr.onreadystatechange = ()=>{
         if ( xhr.readyState === 4 && xhr.status === 200 ) {
              let response = JSON.parse(xhr.responseText);
-             console.log(response)
              if(recall) recall(response);
            
         }
@@ -25,16 +24,16 @@ let searchResponse = (response) =>{
   if (response.artists != null) {
     artistInfo.innerHTML= response.artists[0].strBiographyEN;
     artistImige.src=response.artists[0].strArtistThumb;
-    trnsBtn.style.display = "block";              
+    trnsBtn.style.display = "block";
+    artistImige.style.display="block";
+                  
   } 
   else {
    artistInfo.innerHTML= "Sorry, We couldn't find what you're looking for! "
    trnsBtn.style.display = "none"; 
    artistImige.src=""
    artistN.value=" ";
-
-   console.log("hello") 
-
+   artistImige.style.display="none";
 }
 
 }
@@ -63,15 +62,7 @@ search.addEventListener('click', (event)=> {
 
 trnsBtn.addEventListener("click",()=>{
   let lyrics = artistInfo.innerText.replace(";",":");
-// lyrics
   let transUrl="https://translate.yandex.net/api/v1.5/tr.json/translate?key=trnsl.1.1.20200204T072713Z.2ce9652c3cfe1149.bba992d9ee381e66e45f3f03b186abd56134aa36&text="+lyrics+"&lang=en-ar";
   request(translate,transUrl)
 });
         
-        
-        // trnsBtn.onload = function(){
-          //   trnsBtn.style.display="none"
-          // }
-          // x.style.visibility = 'hidden';
-          // trnsBtn.style.visibility = 'hidden';
-          // transLyrics.innerText = response.text;
